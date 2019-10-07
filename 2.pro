@@ -9,9 +9,7 @@ clauses
 create_list(E,E,[E]).
 create_list(B,E,[B|T]):-B1=B+1, create_list(B1, E, T).
 run:-
-	write("scuk my mother fucking dick.\n"),
-	write("now lets start.\n"),
-	write("enter\n"),
+	write("enter\n***************\n"),
 	write("1- to write down the list of numbers\n"),
 	write("0- to exit\n"),
 	write(">>"), readchar(X),write(X),nl,
@@ -23,8 +21,8 @@ do('1'):-
 	create_list (B1, E,T),
 	write(T).
 do('0'):-
-	write("go fuck yourself dumb ass bitch. screw you\n"), exit.
+	write("Enough.\n"), exit.
 do(_):-
-	write("u dumb as fuck").
+	write("bad value\n\n\n").
 goal
 run.
