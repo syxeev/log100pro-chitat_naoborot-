@@ -12,7 +12,7 @@ length(K,[_|T]):-
 	length(NK, T),
 	K = NK + 1.
 change(C, X, [H|T],[H|T1]):-
-	X<>0,
+	X>0,
 	NX = X - 1,
 	change(C, NX, T, T1).
 change(C,0,[_|T],[C|T1]):-
